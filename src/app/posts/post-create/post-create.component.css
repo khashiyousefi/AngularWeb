@@ -1,0 +1,11 @@
+mat-card {
+  width: 80%;
+  margin: auto;
+  background-color: azure;
+  /* color: blue; */
+  /* margin-bottom: 10px; */
+}
+mat-form-field,
+textarea {
+  width: 100%;
+}

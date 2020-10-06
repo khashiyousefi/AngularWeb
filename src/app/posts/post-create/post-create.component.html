@@ -1,0 +1,29 @@
+<h2>The Create Post Component</h2>
+<mat-card>
+  <mat-form-field>
+    <textarea matInput [value]="newPost" #inputPost></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onClickPost(inputPost)">
+    Save Post!
+  </button>
+</mat-card>
+<br />
+<mat-card>
+  <mat-form-field>
+    <!-- <mat-label>Leave a comment</mat-label> -->
+    <textarea
+      matInput
+      placeholder="Hi There!"
+      rows="6"
+      [(ngModel)]="enteredValue"
+    ></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="OnClickBind()">
+    Save2WayBinding
+  </button>
+</mat-card>
+
+<!-- <input type="text"></input> -->
+
+<p>{{ newPost }}</p>
+<p>{{ newBind }}</p>
